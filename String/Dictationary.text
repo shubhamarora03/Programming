@@ -5,15 +5,18 @@ N.sort(reverse=True)
 d={}
 for i in N:
     d[i]=0
-    
+# output - {1: 0, 2: 0, 6: 0}
+
 for i in N:
     d[i]=d[i]+1
+#output - {1: 2, 2: 2, 6: 1}
 
 d1=dict(sorted(d.items(), key=lambda item: item[1],reverse=True))
 # data is sorterd in lexicography order i.e why have to sort at the beginning
-
+#output - {1: 2, 2: 2, 6: 1}
 
 li=[]
 for i in d1.keys():
     li.append(i)
 print(li)
+#Final output - [2, 1, 6]
