@@ -1,3 +1,5 @@
+## It doesn't conatin duplicate values
+
 N=[1,2,2,1,6]
 N.sort(reverse=True)
 d={}
@@ -8,6 +10,7 @@ for i in N:
     d[i]=d[i]+1
 
 d1=dict(sorted(d.items(), key=lambda item: item[1],reverse=True))
+# data is sorterd in lexicography order i.e why have to sort at the beginning
 
 
 li=[]
